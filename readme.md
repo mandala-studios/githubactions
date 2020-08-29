@@ -49,3 +49,8 @@ Volte em branches edit a regra da branch master e abilite a opção Require revi
 Mas voce nao poderar commitar exceto se tiver outra pessoa para pode fazer o review do seu codigo e aceita-lo. Caso nao tenha é so desproteger, aceitar a pr e proteger novamente
 
 Feito isso vc agora pode alterar algum arquivo e testar se aparece o codeview requerido
+
+
+# Criando uma Action
+
+Va na aba action do github
