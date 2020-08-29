@@ -23,4 +23,4 @@ jobs:
       - name: Esperando aplicação levantar
         run: docker exec api dockerize -timeout=400s -wait=http://localhost:3000 
       - name: Rodando os tests
-        run: docker exec -it api yarn test:e2e
+        run: docker exec api yarn test:e2e
