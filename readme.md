@@ -13,9 +13,9 @@ Coloca o nome da master, para atribuir a master uma rule
 
 Selecione as Opções
 
-* Incluir para administrador
-* Restrict who can push to master(deixei vazio)
-* Marcar opção que requer code review tendo pelo menos 1 aceito para poder entrar
+* Include administrators
+* Restrict who can push to matching branches(deixei vazio)
+* Require pull request reviews before merging
 
 Salve a role. E se quise testar basta tentar fazer um push na master que dará erro
 
@@ -45,3 +45,7 @@ A regra é muito simples:
 ```
 
 Volte em branches edit a regra da branch master e abilite a opção Require review from Code Owners
+
+Mas voce nao poderar commitar exceto se tiver outra pessoa para pode fazer o review do seu codigo e aceita-lo. Caso nao tenha é so desproteger, aceitar a pr e proteger novamente
+
+Feito isso vc agora pode alterar algum arquivo e testar se aparece o codeview requerido
