@@ -21,4 +21,4 @@ jobs:
       - name: Subindo a aplicalção
         run: docker-compose up -d
       - name: Rodando os tests
-        run: docker exec -it api yarn test
+        run: docker exec -it api yarn test:e2e
