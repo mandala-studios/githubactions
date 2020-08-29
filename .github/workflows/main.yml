@@ -20,5 +20,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Subindo a aplicalção
         run: docker-compose up -d
+      - name: Esperando aplicação levantar
+        run: docker exec api dockerize -timeout=400s -wait=http://localhost:3000 
       - name: Rodando os tests
         run: docker exec -it api yarn test:e2e
